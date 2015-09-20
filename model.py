@@ -3,7 +3,7 @@ from sqlalchemy.ext.declarative import declarative_base
 from sqlalchemy.orm import sessionmaker
 import datetime
 
-engine = sqla.create_engine('mysql://root@localhost/momentum')
+engine = sqla.create_engine('mysql://root@localhost/biggest_loser')
 conn = engine.connect()
 Base = declarative_base()
 Session = sessionmaker(bind=engine)
